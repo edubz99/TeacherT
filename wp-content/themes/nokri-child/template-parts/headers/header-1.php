@@ -35,7 +35,7 @@ else
 }
 /* Header Logo */
 $headerlogo = '';
-$logo       =  get_template_directory_uri() . '/images/logo.png';
+$logo       =  get_template_directory_uri() . '/images/logo.svg';
 if( isset( $nokri['header_logo']['url'] )  && $nokri['header_logo']['url'] != "")
 {
 	$logo = ( $nokri['header_logo']['url'] );
@@ -168,7 +168,7 @@ $signup = ( isset($nokri['sb_sign_up_page']) && $nokri['sb_sign_up_page'] != "" 
 if(basename(get_page_template()) == 'page-dashboard.php')
 {
 	$headerlogo = '';
-	$logo  =  get_template_directory_uri() . '/images/logo-dash.png'; 
+	$logo  =  get_template_directory_uri() . '/images/logo-dark.svg'; 
 	if( isset( $nokri['dashborad_header_logo']['url'] )  && $nokri['dashborad_header_logo']['url'] != "")
 	{
 		$logo = ( $nokri['dashborad_header_logo']['url'] );
@@ -180,7 +180,7 @@ $wo_link = isset($nokri['wo_log_btn_link']) ? $nokri['wo_log_btn_link']  : '';
 $wo_icon = isset($nokri['wo_log_btn_icon']) ? $nokri['wo_log_btn_icon']  : '';
 ?>
 <div class="transparent-header-1">
- <nav id="menu-1" class="mega-menu <?php echo esc_attr($dashboard_class)." ".$bread_class; ?>" <?php if(wp_basename(get_page_template()) != 'page-home.php'  && $page_check == false ) { echo str_replace('\\',"",$bg_url); } ?>>
+ <nav id="menu-1" class="mega-menu <?php echo esc_attr($dashboard_class); ?>">
          <section class="menu-list-items ">
          	<div class="container<?php echo esc_attr($dashboard_fluid); ?>">
                 <ul class="menu-logo">

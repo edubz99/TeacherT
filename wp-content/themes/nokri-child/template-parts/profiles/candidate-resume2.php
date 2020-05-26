@@ -84,7 +84,7 @@
                               <p><?php echo   esc_html($cand_headline); ?></p>
                               <?php } ?>
                            </div>
-                           <button type="submit" class="btn n-btn-custom btn-block saving_resume" data-cand-id= <?php echo esc_attr($author_id);   ?>><i class="fa fa-heart"></i><?php echo nokri_feilds_label('cand_save_resume',esc_html__( 'Save Resume', 'nokri' )); ?></button> 
+                           <button type="submit" class="btn n-btn-custom btn-block saving_resume" data-cand-id= <?php echo esc_attr($author_id);   ?>><i class="fa fa-heart"></i><?php echo nokri_feilds_label('cand_save_resume',esc_html__( 'Save CV', 'nokri' )); ?></button> 
                            <?php if($cand_resume_down) echo $resume_id;  ?>
                         </div>
                      </div>

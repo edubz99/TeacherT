@@ -92,7 +92,7 @@ $query = new WP_Query( $args );
                 <tr>
                     <th scope="row"><?php echo esc_html__( 'Job Title', 'nokri' ); ?></th>
                     <th scope="row"><?php echo esc_html__( 'Status', 'nokri' ); ?></th>
-                    <th scope="row"><?php echo esc_html__( 'Resume', 'nokri' ); ?></th>
+                    <th scope="row"><?php echo esc_html__( 'Applicants', 'nokri' ); ?></th>
                     <th scope="row"><?php echo esc_html__( 'Views', 'nokri' ); ?></th>
                 </tr>
                 <?php echo "".$job_html; ?>

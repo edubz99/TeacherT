@@ -110,8 +110,8 @@ $admin_message = isset($nokri['job_post_for_admin_message']) ? $nokri['job_post_
 <input type="hidden" id="chimp_mail_valid" value="<?php echo esc_html__( 'Email not valid', 'nokri' ); ?>" />
 <input type="hidden" id="chimp_success" value="<?php echo esc_html__( 'Thanks for subscription', 'nokri' ); ?>" />
 <input type="hidden" id="comp_folow_success" value="<?php echo esc_html__( 'Company followed successfully', 'nokri' ); ?>" />
-<input type="hidden" id="resume_save_success" value="<?php echo esc_html__( 'Resume Uploaded Successfully', 'nokri' ); ?>" />
-<input type="hidden" id="emp_resume_save" value="<?php echo esc_html__( 'Resume Saved Successfully', 'nokri' ); ?>" />
+<input type="hidden" id="resume_save_success" value="<?php echo esc_html__( 'CV Uploaded Successfully', 'nokri' ); ?>" />
+<input type="hidden" id="emp_resume_save" value="<?php echo esc_html__( 'CV Saved Successfully', 'nokri' ); ?>" />
 <input type="hidden" id="already_resume_saved" value="<?php echo esc_html__( 'Already saved', 'nokri' ); ?>" />
 <input type="hidden" id="is_email_on" value="<?php echo ($email_user); ?>" />
 <input type="hidden" id="old_password_miss" value="<?php echo esc_html__( 'Enter old password', 'nokri' ); ?>" />
@@ -123,8 +123,8 @@ $admin_message = isset($nokri['job_post_for_admin_message']) ? $nokri['job_post_
 <input type="hidden" id="del_msg" value="<?php echo esc_html__( 'Deleted successfully', 'nokri' ); ?>" />
 <input type="hidden" id="is_sticky_menu" value="<?php echo ($is_sticky_menu ); ?>" />
 <input type="hidden" id="is_gmap" value="<?php echo ($is_gmap); ?>" />
-<input type="hidden" id="validate_vid" value="<?php echo esc_html__( 'Invalid video resume link', 'nokri' ); ?>" />
-<input type="hidden" id="upload_doc" value="<?php echo esc_html__( 'Please upload resume', 'nokri' ); ?>" />
+<input type="hidden" id="validate_vid" value="<?php echo esc_html__( 'Invalid video CV link', 'nokri' ); ?>" />
+<input type="hidden" id="upload_doc" value="<?php echo esc_html__( 'Please upload CV', 'nokri' ); ?>" />
 <input type="hidden" id="email_exist" value="<?php echo esc_html__( 'Email already exists, please login to apply', 'nokri' ); ?>" />
 <input type="hidden" id="some_wrong" value="<?php echo esc_html__( 'Email not sent', 'nokri' ); ?>" />
 <input type="hidden" id="add_skills_value" value="<?php echo esc_html__( 'Set Your Skills Percentage', 'nokri' ); ?>" />

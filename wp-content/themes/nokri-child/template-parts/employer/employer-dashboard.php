@@ -136,6 +136,7 @@ $user_profile_dashboard_txt = ( isset($nokri['user_profile_dashboard_txt']) && $
                             <div class="contact-caption">
                                 <h4><?php echo the_author_meta( 'display_name', $user_id ); ?></h4>
                                 <span><?php echo get_user_meta($user_id, '_user_headline', true); ?></span>
+                                <a href="/dashboard/?tab-data=active-jobs" class="btn n-btn-flat">View Applicants</a>
                             </div>
                             <ul class="social-links list-inline">
                      <?php if($emp_fb) { ?>

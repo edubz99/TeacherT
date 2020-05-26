@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
+<link rel="apple-touch-icon" sizes="180x180" href="<?= get_template_directory_uri()?>/images/favicon_package/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="<?= get_template_directory_uri()?>/images/favicon_package/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="<?= get_template_directory_uri()?>/images/favicon_package/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 <?php
 global $nokri;
 
@@ -89,3 +94,39 @@ else
 }
 if($language_switcher)
 echo nokri_language_switcher();
+
+if(!is_front_page()) { 
+	$banner_bg =  get_template_directory_uri(). '/images/teacher-tee-landing.jpg';
+	$featured_image =  get_the_post_thumbnail_url();
+	$page_for_posts = get_option( 'page_for_posts' ); 
+
+
+	if ( has_post_thumbnail() && !is_home()) :?>
+		<section class="n-hero-section-two" style="background: url(<?= $featured_image ?>);background-position: center center !important; background-size: cover !important;" >
+	<?php elseif(is_home()) :
+		$thumb_id = get_post_thumbnail_id( $page_for_posts);
+		$blog_page_url = wp_get_attachment_url( $thumb_id );
+	?>
+		<section class="n-hero-section-two" style="background: url(<?= $blog_page_url ?>);background-position: center center !important; background-size: cover !important;" >
+	<?php else: ?>
+		<section class="n-hero-section-two" style="background: url(<?= $banner_bg ?>);background-position: center center !important; background-size: cover !important;" >
+	<?php endif; ?>
+		<div class="">
+			<div class="row">
+				<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+					<div class="n-hero-two-box">
+					<div class="n-hero-two-main-text">
+					<?php if ( !is_post_type_archive( 'courses' ) && !is_home()): ?>
+						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+					<?php elseif(is_home()) : ?>
+						<h1 class="entry-title">Blog</h1>
+					<?php else:?>
+						<h1 class="entry-title">TEFL Courses</h1>
+					<?php endif;?>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<?php } 

@@ -92,7 +92,7 @@ $class_terms = get_terms('job_class', array('hide_empty' => false , 'orderby'=> 
 				}
 				?>
                     <ul class="list-inline cand-resumes-access">
-                    <li class="package-title"><?php echo esc_html__( 'Resume Views', 'nokri' ); ?></li>
+                    <li class="package-title"><?php echo esc_html__( 'CV Views', 'nokri' ); ?></li>
                     <li class="package-action"><?php echo ($rem_searches)." ".esc_html__( 'Remainings', 'nokri' ); ?></li>
                     </ul>
                     <?php } ?>
@@ -152,7 +152,7 @@ $class_terms = get_terms('job_class', array('hide_empty' => false , 'orderby'=> 
 				}
 				?>
                     <ul class="list-inline cand-resumes-access">
-                    <li class="package-title"><?php echo esc_html__( 'Resume Views', 'nokri' ); ?></li>
+                    <li class="package-title"><?php echo esc_html__( 'CV Views', 'nokri' ); ?></li>
                     <li class="package-action"><?php echo ($rem_searches)." ".esc_html__( 'Remainings', 'nokri' ); ?></li>
                     </ul>
                     <?php } ?>

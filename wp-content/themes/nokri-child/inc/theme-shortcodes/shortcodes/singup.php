@@ -88,7 +88,7 @@ function singnup_short() {
                 "type" => "textfield",
                 "holder" => "div",
                 "class" => "",
-                "heading" => esc_html__("Candidate Button Text", 'nokri'),
+                "heading" => esc_html__("Job Seeker Button Text", 'nokri'),
                 "param_name" => "cand_btn",
             ),
             array(
@@ -99,7 +99,7 @@ function singnup_short() {
                 "admin_label" => true,
                 "value" => array(
                     esc_html__('Select desired', 'nokri') => '',
-                    esc_html__('Candidate', 'nokri') => '0',
+                    esc_html__('Job Seeker', 'nokri') => '0',
                     esc_html__('Employer', 'nokri') => '1',
                 ),
             ),
@@ -312,7 +312,7 @@ function admin_choice_short_base_func($atts, $content = '') {
     /* Employer Button */
     $section_emp_btn = (isset($emp_btn) && $emp_btn != "") ? $emp_btn : esc_html__('Employer', 'nokri');
     /* Candidate Button */
-    $section_cand_btn = (isset($cand_btn) && $cand_btn != "") ? $cand_btn : esc_html__('Candidate', 'nokri');
+    $section_cand_btn = (isset($cand_btn) && $cand_btn != "") ? $cand_btn : esc_html__('Job Seeker', 'nokri');
     /* Already Register Text */
     $section_already_txt = (isset($already_txt) && $already_txt != "") ? $already_txt : esc_html__('Already registered, login here.', 'nokri');
     /* side bar heading */

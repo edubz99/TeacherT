@@ -1845,21 +1845,45 @@ if(is_accordion == '1')
 
  });
 
-
+ 
  /* Sticky Menu Option */
  var is_stick = $('#is_sticky_menu').val();
  var is_dashboard_page = $('#is_dashboard_page').val();
- if (is_stick == 1 && is_dashboard_page != 1) {
+ const mobileHeader = document.querySelector("#menu-1");
+ const siteLogo = $(".menu-logo li a img");
+ const toggler = $('.menu-mobile-collapse-trigger');
+ const menuLinks = $('.menu-links');
+ if (is_stick == 1  && $(window).width() > 767.9) {
   $(window).scroll(function() {
    var limit = 200;
    if (jQuery(this).scrollTop() >= limit) {
     jQuery('.mega-menu').addClass('desktopTopFixed');
+    if(mobileHeader.classList.contains('desktopTopFixed')) {
+
+      $(siteLogo).attr(
+        "src",
+        "http://teachertee.com/wp-content/uploads/2018/09/logo-dark.svg"
+      );
+   
+    } 
+
    } else {
+    $(siteLogo).attr(
+      "src",
+      "http://teachertee.com/wp-content/uploads/2018/09/logo.svg"
+    );
     jQuery('.mega-menu').removeClass('desktopTopFixed');
    }
   });
  }
 
+
+  if ($(window).width() < 767.9 ) {
+    $(siteLogo).attr(
+      "src",
+      "http://teachertee.com/wp-content/uploads/2018/09/logo-dark.svg"
+    );
+  } 
 
 
 

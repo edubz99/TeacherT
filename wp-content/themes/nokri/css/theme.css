@@ -561,8 +561,8 @@ fieldset[disabled] .n-btn-rounded.active {
 
 .n-btn-custom-two { 
 	color: #FFF; 
-	background-color: #233d7b; 
-	border-color:#233d7b;
+	background-color: #372fde; 
+	border-color:#372fde;
 	font-size:15px;
 	font-weight:500;
 	border-radius:4px;
@@ -1307,7 +1307,7 @@ fieldset[disabled] .n-btn-rounded.active {
 /*MAIN HERO 2*/
 .n-hero-section-two {
 	padding: 0;
-    background: url(../images/slider-2-image.png);;
+    background: url(../images/teacher-tee-landing.jpg);;
 	background-position:center center;
 	background-size:cover;
 	background-repeat:no-repeat;
@@ -1781,7 +1781,7 @@ fieldset[disabled] .n-btn-rounded.active {
 	border-color: #fb236a;	
 }
 .n-call-to-action-two .img-side-fluid {
-	background: url(../images/calltoaction-two-bg.png);;
+	/* background: url(../images/calltoaction-two-bg.png);; */
 	background-position:left top;
 	background-size:contain;
 	background-repeat:no-repeat;
@@ -2849,7 +2849,7 @@ fieldset[disabled] .n-btn-rounded.active {
 /*MOBILE APP NEW*/
 .n-mobile-app-new {
 	padding: 0;
-    background: url(../images/slider-2-image.png);;
+    background: url(../images/teacher-tee-landing.jpg);
 	background-position:center center;
 	background-size:cover;
 	background-repeat:no-repeat;
@@ -9253,7 +9253,7 @@ display: none;
 }
 
 .n-job-listing5 .n-listing-content .n-listing-user-detail ul li .combination{
-	color: #233d7b;
+	color: #372fde;
 }
 
 .n-job-listing5 .n-listing-content .n-listing-user-detail ul li a .badge{

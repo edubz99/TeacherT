@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
+<link rel="apple-touch-icon" sizes="180x180" href="<?= get_template_directory_uri()?>/images/favicon_package/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="<?= get_template_directory_uri()?>/images/favicon_package/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="<?= get_template_directory_uri()?>/images/favicon_package/favicon-16x16.png">
+<link rel="manifest" href="<?= get_template_directory_uri()?>/images/favicon_package/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 <?php
 global $nokri;
+
 
 		//update_post_meta( $pid, '_job_level', $job_level_id);
 /* Linkedin response after logged in */

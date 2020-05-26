@@ -126,7 +126,7 @@ foreach ( $cand_followers as $follower )
 <div class="dashboard-posted-jobs">
     <div class="notification-box">
         <div class="notification-box-icon"><span class="ti-info-alt"></span></div>
-        <h4><?php echo esc_html__( 'No saved resume found', 'nokri' ); ?></h4>
+        <h4><?php echo esc_html__( 'No saved CV found', 'nokri' ); ?></h4>
     </div>
 </div>
 <?php } ?>

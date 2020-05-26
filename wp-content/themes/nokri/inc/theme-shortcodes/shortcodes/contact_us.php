@@ -179,7 +179,7 @@ $bg_img = '';
 if( $basic_bg_img != "" )
 {
 $bgImageURL	=	nokri_returnImgSrc( $basic_bg_img );
-$bg_img = ( $bgImageURL != "" ) ? ' \\s\\t\\y\\l\\e="background: rgba(0, 0, 0, 0.6) url('.$bgImageURL.') 0 0 no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: center center; background-attachment:scroll;"' : "";
+$bg_img = ( $bgImageURL != "" ) ? ' \\s\\t\\y\\l\\e="background: rgba(0, 0, 0, 0.4) url('.$bgImageURL.') 0 0 no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: center center; background-attachment:scroll;background-blend-mode: multiply;"' : "";
 }
 
 return '<section class="n-pages-breadcrumb" '.str_replace('\\',"",$bg_img).'>

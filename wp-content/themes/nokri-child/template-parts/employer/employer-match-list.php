@@ -62,7 +62,7 @@ $company_id     = 	$li  =  $follower_id =  '';
         <div class="posted-job-list resume-on-jobs header-title">
             <ul class="list-inline">
                 <li class="posted-job-title"> <?php echo  esc_html__( 'Candidate Name', 'nokri' ); ?></li>
-                <li class="posted-job-expiration"> <?php echo  esc_html__('Resume', 'nokri' ); ?></li>
+                <li class="posted-job-expiration"> <?php echo  esc_html__('CV', 'nokri' ); ?></li>
                 <li class="posted-job-action"><?php echo  esc_html__( 'Profile', 'nokri' ); ?></li>
             </ul>
         </div>

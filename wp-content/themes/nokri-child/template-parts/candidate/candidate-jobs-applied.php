@@ -20,7 +20,7 @@ if(isset($_GET['job_name']))
     <div class="dashboard-job-filters">
     <div class="row">
     <div class="col-md-7 col-xs-12 col-sm-6">
-                    <h4><?php echo esc_html__( 'Your applied jobs', 'nokri' ); ?></h4>
+                    <h4><?php echo esc_html__( 'Your Applications', 'nokri' ); ?></h4>
     </div>
         <div class="col-md-5 col-xs-12 col-sm-4">
             <div class="form-group">

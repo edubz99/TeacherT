@@ -312,7 +312,7 @@
 								$cand_intro_video = $matches[1];
 						?>
                         <div class="resume-3-box">
-                        	<h4><?php echo nokri_feilds_label('cand_vid_lab',esc_html__( 'Resume Video', 'nokri' )); ?></h4>
+                        	<h4><?php echo nokri_feilds_label('cand_vid_lab',esc_html__( 'CV Video', 'nokri' )); ?></h4>
                             <div class="portfolio-video">
                                 <iframe width="750" height="380" src="https://www.youtube.com/embed/<?php echo "".($cand_intro_video); ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             </div>

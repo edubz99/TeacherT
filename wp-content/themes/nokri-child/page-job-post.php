@@ -495,7 +495,7 @@ $req_mess = esc_html__( 'This value is required', 'nokri' );
                       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="job_external_mail_feild" <?php if($job_ext_mail == "" ){echo 'style="display: none;"';}?> >
                          <div class="form-group">
                          <label><?php echo esc_html__( 'Enter Valid Email', 'nokri' ); ?></label>
-                            <input type="text" class="form-control" placeholder="<?php echo esc_html__( 'Enter email where resume recieved', 'nokri' ); ?>" name="job_external_mail" value="<?php echo esc_attr($job_ext_mail); ?>"  id="job_external_email" data-parsley-type="email"> 
+                            <input type="text" class="form-control" placeholder="<?php echo esc_html__( 'Enter email', 'nokri' ); ?>" name="job_external_mail" value="<?php echo esc_attr($job_ext_mail); ?>"  id="job_external_email" data-parsley-type="email"> 
                          </div>
                       </div>
                       <?php } ?>
@@ -645,7 +645,7 @@ $req_mess = esc_html__( 'This value is required', 'nokri' );
                       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="job_external_mail_feild" <?php if($job_ext_mail == "" ){echo 'style="display: none;"';}?> >
                          <div class="form-group">
                          <label><?php echo esc_html__( 'Enter Valid Email', 'nokri' ); ?></label>
-                            <input type="text" class="form-control" placeholder="<?php echo esc_html__( 'Enter email where resume recieved', 'nokri' ); ?>" name="job_external_mail" value="<?php echo esc_attr($job_ext_mail); ?>"  id="job_external_email" data-parsley-type="email"> 
+                            <input type="text" class="form-control" placeholder="<?php echo esc_html__( 'Enter email', 'nokri' ); ?>" name="job_external_mail" value="<?php echo esc_attr($job_ext_mail); ?>"  id="job_external_email" data-parsley-type="email"> 
                          </div>
                       </div>
                       <?php } ?>

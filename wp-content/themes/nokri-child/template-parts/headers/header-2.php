@@ -34,7 +34,7 @@ if( isset( $nokri['header_logo']['url'] )  && $nokri['header_logo']['url'] != ""
 }
 else
 {
-	$logo  =  get_template_directory_uri() . '/images/logo.png'; 
+	$logo  =  get_template_directory_uri() . '/images/logo.svg; 
 }
 /* Dashboard Page */
 $dashboard_id = '';
@@ -151,7 +151,7 @@ else
 if(basename(get_page_template()) == 'page-dashboard.php')
 {
 	$headerlogo = '';
-	$logo  =  get_template_directory_uri() . '/images/logo-dash.png'; 
+	$logo  =  get_template_directory_uri() . '/images/logo-dark.svg'; 
 	if( isset( $nokri['dashborad_header_logo']['url'] )  && $nokri['dashborad_header_logo']['url'] != "")
 	{
 		$logo = ( $nokri['dashborad_header_logo']['url'] );

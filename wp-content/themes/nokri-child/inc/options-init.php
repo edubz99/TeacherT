@@ -5498,7 +5498,7 @@ Redux::setSection($opt_name, array(
             'title' => esc_html__('Upload section bg image', 'nokri'),
             'compiler' => 'true',
             'default' => array(
-                'background-image' => '',
+                'background-image' => get_template_directory_uri() . '/images/teacher-tee-landing.jpg',
                 'background-repeat' => 'no-repeat',
                 'background-size' => 'cover',
                 'background-position' => 'center bottom',

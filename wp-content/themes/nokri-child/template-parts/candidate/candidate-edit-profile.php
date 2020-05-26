@@ -415,7 +415,7 @@ $req_mess = esc_html__( 'This value is required', 'nokri' );
 <!-- Candidate Resume Uplaoad -->
 <div class="main-body">
 	<div class="dashboard-edit-profile" id="add-resume">
-		<h4 class="dashboard-heading"><?php echo nokri_feilds_label('resume_section_label',esc_html__( 'Add Resumes', 'nokri' )); ?></h4>
+		<h4 class="dashboard-heading"><?php echo nokri_feilds_label('resume_section_label',esc_html__( 'Add CVs', 'nokri' )); ?></h4>
 		<div class="row">
         	<?php  if( nokri_feilds_operat('cand_resumes_setting', 'show')) { ?> 
 			<div class="col-md-12 col-xs-12 col-sm-12">
@@ -435,7 +435,7 @@ $req_mess = esc_html__( 'This value is required', 'nokri' );
                     </div>
             <?php  }   ?>
             <div class="col-md-12 col-xs-12 col-sm-12">
-				<input type="submit" value="<?php echo nokri_feilds_label('cand_resume_btn',esc_html__('Save Resume', 'nokri' )); ?>" class="btn n-btn-flat cand_person_save">
+				<input type="submit" value="<?php echo nokri_feilds_label('cand_resume_btn',esc_html__('Save CV', 'nokri' )); ?>" class="btn n-btn-flat cand_person_save">
                 <input type="button" disabled  value="<?php echo  esc_html__( 'Processing...','nokri' ); ?>" class="btn n-btn-flat cand_person_pro">
 			</div>
 		</div>
@@ -779,25 +779,6 @@ $req_mess = esc_html__( 'This value is required', 'nokri' );
     </div>
 </div>
 <!-- End Candidate Portfolio -->
-<?php }  if( $custom_feilds_html != '' || $custom_feilds_cand != '') { ?>
- <!-- Candidate Custom Feilds -->
-<div class="main-body">
-    <div class="dashboard-edit-profile">
-        <h4 class="dashboard-heading"><?php echo esc_html($custom_feild_txt); ?></h4>
-            <div class="row">
-                <div class="col-md-12 col-xs-12 col-sm-12">
-                    <div class="row">
-                    <?php echo $custom_feilds_html.$custom_feilds_cand; ?> 
-                    
-                   </div>
-                </div>
-            </div>
-            <div class="col-md-12 col-xs-12 col-sm-12">
-			<input type="submit" value="<?php echo esc_html__('Save','nokri'); ?>" class="btn n-btn-flat">
-		</div>
-    </div>
-</div>
-<!-- End Candidate Custom Feilds -->
 <?php }  if($soc_sec) { ?>
 <!-- Candidate Social Links -->
 <div class="main-body">

@@ -742,6 +742,76 @@ function nokri_get_uploaded_cand_resume()
 	die();
 }
 }
+
+
+
+
+/************************************/
+/* Ajax handler for Getting Resume1 */
+/************************************/
+add_action('wp_ajax_get_uploaded_cand_resume1', 'nokri_get_uploaded_cand_resume1');  
+if ( ! function_exists( 'nokri_get_uploaded_cand_resume1' ) ) {
+function nokri_get_uploaded_cand_resume1()
+{
+	$result	=	array();
+	$ids	=	get_user_meta ( get_current_user_id(), '_cand_resume', true );
+	
+	if( $ids != "" )
+	{
+	$ids_array	=	explode( ',', $ids );
+	$cv_icon = '';
+		foreach( $ids_array as $m )
+		{
+			$obj	   =	array();
+			$array     =    explode('.', get_attached_file( $m ));
+			$extension =    end($array);
+			if ($extension == 'pdf' && $extension != '') 
+			{
+				$cv_icon = trailingslashit( get_template_directory_uri () ).'images/logo-adobe-pdf.jpg';
+			}
+			else if ($extension == 'doc' && $extension != '') 
+			{
+				$cv_icon = trailingslashit( get_template_directory_uri () ).'images/DOC.png';
+			}
+			else if ($extension == 'docx' && $extension != '') 
+			{
+				$cv_icon = trailingslashit( get_template_directory_uri () ).'images/docx.png';
+			}
+			$obj['display_name'] = basename( get_attached_file( $m ) );
+			$obj['name'] = $cv_icon;
+			$obj['size'] = filesize( get_attached_file( $m ) );
+			$obj['id'] = $m;
+			$result[] = $obj;	
+		}
+		header('Content-type: text/json');
+		header('Content-type: application/json');
+		echo json_encode($result);
+	}
+	else
+	{
+		header('Content-type: text/json');
+		header('Content-type: application/json');
+		echo json_encode($result);
+	}
+	die();
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /************************************/
 /* Ajax handler for Candidate Aplly Job Athentication */
 /************************************/
@@ -1462,7 +1532,7 @@ function nokri_view_application()
 			$link        =   nokri_set_url_param(get_the_permalink($attachment_id), 'attachment_id', esc_attr( $attachment_id ));
 			$final_url   =   esc_url(nokri_page_lang_url_callback($link));
 			$resume_link =  '<a class="btn btn-custom" href="'.$final_url.'&download_file=1"">'.esc_html__( 'Download', 'nokri' ).'</a>';
-			$label       =   esc_html__('You have Applied Against Resume', 'nokri' );
+			$label       =   esc_html__('You have Applied Against CV', 'nokri' );
 	} 
 	else 
 	{

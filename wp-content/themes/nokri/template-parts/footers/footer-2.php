@@ -99,7 +99,7 @@ if((isset($nokri['footer_full'])) && $nokri['footer_full'] == 1)
 				 $ft_last_name = isset($nokri['footer_last_name']) ? $nokri['footer_last_name']:  esc_html__("ScriptsBundle", "nokri");
 				 $ft_last_link = isset($nokri['footer_last_link']) ? $nokri['footer_last_link']:  esc_html__("#", "nokri"); ?>
                   <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                     <p><?php echo ($ft_last); ?> <a href="<?php echo esc_url($ft_last_link); ?>" target="_blank"> <?php echo ($ft_last_name); ?> </a></p>
+                  <p>&copy; <?php echo date("Y").' -'.esc_html__("All rights reserved. TeacherTee"); ?></p>
                   </div>
                </div>
             </div>

@@ -10,3 +10,254 @@ License URI: https://themeforest.net/user/scriptsbundle
 Text Domain: nokri
 Tags: featured-images, sticky-post, translation-ready
 */
+
+/* CUSTOME STYLES */
+
+/* MENU */
+.mega-menu .menu-logo img {
+  margin-top: 0px !important;
+}
+
+@media screen and (max-width: 767.9px) {
+  .menu-mobile-collapse-trigger.active .mega-menu .menu-links {
+    max-height: 100vh;
+  }
+}
+
+.n-pages-breadcrumb:before {
+  background: rgba(0, 0, 0, 0.5);
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(0, 40, 70, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+  background: linear-gradient(
+    to right,
+    rgba(0, 40, 70, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .n-hero-section-two {
+    height: 800px !important;
+  }
+  body:not(.home) .n-pages-breadcrumb {
+    height: 800px !important;
+  }
+}
+
+.n-hero-section-two:before {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+
+@media screen and (min-width: 768px) {
+  .n-hero-section-two .n-hero-two-box h1 {
+    font-size: 50px !important;
+    text-align: center;
+  }
+}
+
+/* COURSES */
+body.home .vc_row.wpb_row.vc_row-fluid.container {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+body.home .featured-courses-wrapper {
+  float: none;
+}
+
+body.home .featured-courses-wrapper .vc_gutenberg {
+  margin: 0 !important;
+}
+body.home .featured-courses-wrapper .heading-title.left {
+  margin-bottom: 40px;
+}
+body.home .featured-courses-wrapper .heading-title p {
+  display: inline-block;
+  text-align: initial !important;
+  margin-top: 0 !important;
+}
+
+body.home .featured-courses-wrapper p {
+  text-align: center;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.tutor-course-loop-price .price del + ins {
+  color: red !important;
+}
+
+@media screen and (max-width: 768px) {
+  .tutor-course-loop .tutor-course-header a img {
+    width: 100%;
+  }
+  .tutor-wrap img {
+    width: 100%;
+  }
+}
+.tutor-course-loop-level {
+  background: #372fde;
+}
+
+.tutor-loop-cart-btn-wrap,
+.tutor-course-purchase-box {
+  display: none;
+}
+.tutor-loop-author a,
+.tutor-loop-author span {
+  font-size: 14px;
+  font-weight: 200 !important;
+}
+.tutor-course-lising-category {
+  margin-left: 33px;
+  margin-top: 3px;
+}
+.tutor-price-preview-box .price > .price {
+  display: flex;
+}
+.tutor-price-preview-box .price > .price del {
+  margin-right: 20px;
+}
+@media (min-width: 768px) {
+  body.home .featured-courses-wrapper {
+    /* max-width: 80% !important; */
+    margin: 80px auto 0 auto !important;
+  }
+  body.home .n-hero-section-two .n-hero-two-box {
+    padding-top: 360px;
+  }
+  body.home .n-hero-section-two .move-down i {
+    bottom: -357px;
+  }
+}
+@media (max-width: 767.9px) {
+  body.home .n-hero-section-two .move-down {
+    display: none !important;
+  }
+}
+/* HOME HERO SECTION */
+body:not(.home) .n-hero-section-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 80px; */
+}
+
+@media (max-width: 767.9px) {
+  body:not(.home) .n-hero-section-two .n-hero-two-box h1 {
+    text-align: center;
+  }
+  body:not(.home) .n-hero-section-two {
+    margin-bottom: 0px !important;
+  }
+
+  .tutor-course-filter-wrap {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .tutor-container {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 768px) {
+  body:not(.home) .n-hero-section-two .n-hero-two-box {
+    padding-top: 0px;
+  }
+}
+/* Jobs */
+.n-featured-jobs-two
+  .n-features-job-two-box
+  .n-featured-single
+  .n-featured-single-top
+  .n-featured-singel-meta
+  p {
+  float: left;
+}
+
+.featured-badge-list {
+  float: right;
+}
+
+/* HEADER */
+
+body:not(.logged-in) .menu-list-items .menu-button li:last-child {
+  display: none;
+}
+
+.n-hero-two-form-cat {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .mega-menu .menu-links {
+    margin-top: 10px !important;
+  }
+}
+/* COLOR PICKER */
+#choose_color {
+  display: none;
+}
+
+/* HIDE LANDING */
+.page-id-266 .n-hero-section-two,
+.page-id-156 .n-hero-section-two,
+.page-id-145 .n-hero-section-two,
+.error404 .n-hero-section-two,
+.author .n-hero-section-two {
+  display: none !important;
+}
+
+/* About Page */
+@media screen and (min-width: 768px) {
+  body.page-about-us
+    .wpb_wrapper
+    .about-us:nth-child(even)
+    .col-md-12.col-sm-12.col-xs-12.nopadding {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .about-us p:not(.large-paragraph) {
+    font-size: 16px !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-two .n-footer-block {
+    display: flex;
+    justify-content: space-between;
+  }
+  .dashboard-new.no-topbar {
+    padding-top: 0px !important;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  #sb_login_msg,
+  #sb_login_redirect,
+  #sb_register_msg,
+  #sb_register_redirect {
+    visibility: hidden;
+  }
+}
+
+.theiaStickySidebar .notification-area {
+  display: none;
+}
+
+.dashboard-new .profile-menu {
+  position: initial !important;
+}
+@media (max-width: 1920px) and (min-width: 1367px) {
+  .dashboard-new .profile-menu {
+    width: 240px !important;
+  }
+}

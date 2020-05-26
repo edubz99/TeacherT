@@ -9,7 +9,7 @@ $desc 		= isset($nokri['404-text-area']) 	? $nokri['404-text-area'] : esc_html__
 $eror_msg 	= isset($nokri['404-text']) 		? $nokri['404-text'] :  esc_html__("0oops Page Not Found", "nokri");
 /*Background*/
 /* search section bg */ 
-$section_bg_url = '';
+$section_bg_url = get_template_directory_uri(). '/images/teacher-tee-landing.jpg';
  if ( isset( $nokri['404_bg_img'] ) )
 {
 	$section_bg_url = nokri_getBGStyle('404_bg_img');

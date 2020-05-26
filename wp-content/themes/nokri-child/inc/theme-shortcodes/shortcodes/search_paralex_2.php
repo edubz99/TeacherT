@@ -308,7 +308,7 @@ function search_paralex_2_short_base_func($atts, $content = '')
                      </div>
                   </div>
                   <div class="move-down">
-                     <a href="#scroll_cats" class="scroller"><i class="ti-arrow-down"></i></a>
+                     <a href="#latest-jobs" class="scroller"><i class="ti-arrow-down"></i></a>
                   </div>
                </div>
             </div>

@@ -11,6 +11,7 @@ if( current_user_can('administrator'))
 /*Admin can post */
 $admin_post = ( isset($nokri['job_post_for_admin']) && $nokri['job_post_for_admin'] != ""  ) ? $nokri['job_post_for_admin'] : '';
 if($admin_post && !current_user_can('administrator') && get_user_meta($user_id, '_sb_reg_type', true) == '' ) {update_user_meta($user_id, '_sb_reg_type', 0); }
+
 if (get_user_meta($user_id, '_sb_reg_type', true) == '')
 { 
 	$term_link = '';

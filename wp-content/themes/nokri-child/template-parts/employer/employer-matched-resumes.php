@@ -89,7 +89,7 @@ $args = nokri_wpml_show_all_posts_callback($args);
             <th> <?php echo esc_html__( 'Job Title', 'nokri' ) ?></th>
             <th> <?php echo esc_html__( 'Status', 'nokri' ) ?></th>
             <th> <?php echo esc_html__( 'Expired On', 'nokri' ) ?></th>
-            <th> <?php echo esc_html__( 'Resumes', 'nokri' ) ?></th>
+            <th> <?php echo esc_html__( 'CVs', 'nokri' ) ?></th>
         </tr>
     </thead>
     <tbody>   

@@ -60,7 +60,7 @@ class authentication
 		
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<div class="form-group">
-					   <input placeholder="'.  esc_html($section_user_password ) .'" class="form-control" type="password" data-parsley-required="true" data-parsley-error-message="'. esc_html__( 'Please enter your password.', 'nokri' ) .'" name="sb_reg_password">
+					   <input placeholder="'.  esc_html($section_user_password ) .'" class="form-control" type="password" data-parsley-required="true" data-parsley-error-message="'. esc_html__( 'Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters.', 'nokri' ) .'" name="sb_reg_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
 					</div>
 				 </div>
 
@@ -109,7 +109,7 @@ class authentication
 				 </div>
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<div class="form-group">
-					   <input placeholder="'. esc_html($user_password_plc) .'" class="form-control" type="password" data-parsley-required="true" data-parsley-error-message="'. esc_html__( 'Please enter your password.', 'nokri' ) .'" name="sb_reg_password" autocomplete="off">
+					   <input placeholder="'. esc_html($user_password_plc) .'" class="form-control" type="password" data-parsley-required="true" data-parsley-error-message="'. esc_html__( 'Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters.', 'nokri' ) .'" name="sb_reg_password" autocomplete="off" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
 					</div>
 				 </div>
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -829,7 +829,7 @@ function nokri_add_to_cart_cand()
 	
 	if( $user_type == 1 && $is_pkg_for == 0 )
 	{
-		echo '7|' . __( "This is candidate package", 'nokri' );
+		echo '7|' . __( "This is job seeker's package", 'nokri' );
 		die();
 	}
 	
