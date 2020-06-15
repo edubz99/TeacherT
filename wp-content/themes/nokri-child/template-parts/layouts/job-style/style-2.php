@@ -223,6 +223,9 @@
                         </div>
                         <span class="ab-iocn"><i class="ti-alarm-clock"></i></span>
                      </div>
+
+                    
+
                      <div class="n-single-job-company">
                          <a class="btn btn-block n-btn-custom-two save_job" href="javascript:void(0)" data-value=<?php echo esc_attr($job_id);?>><?php echo esc_html__('Save This Job', 'nokri' ); ?> </a>
                      </div>
@@ -238,7 +241,16 @@
                         <ul class="job-attach"><?php echo "".($job_attachments); ?></ul>
                      </div>
                      <?php } ?>
-                     <div class="n-single-job-company">
+                     <?php if (has_post_thumbnail( $post->ID ) ): ?>
+                        <div class="company-logo" style="margin-top:30px;margin-bottom:10px;">
+                           <?php the_post_thumbnail(); ?>
+                        </div>
+                     	<?php if(get_field('company_url')) : ?>
+                            <a class="view-profile" href="<?= get_field('company_url'); ?>" target="_blank"><?php echo esc_html__('View Profile', 'nokri' ); ?> </a>
+                         <?php endif; ?>
+                     <?php endif; ?>
+                     
+                     <div class="n-single-job-company" style="display:none;">
                         <div class="dingle-job-company-meta">
                            <ul class="social-links">
                      <?php if($emp_fb) { ?>

@@ -171,12 +171,14 @@ if ( $recent_job_query->have_posts() )
 					
 			}
 			
-			
+			$featured_image =  has_post_thumbnail() ? get_the_post_thumbnail_url(get_the_ID(),'') :
+			esc_url($rel_image_link[0]);
+
 			$recent_job_html    .= '<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                            <div class="n-featured-single">
                               <div class="n-featured-single-top">
                                  <div class="n-featured-singel-img">
-                                    <a href="'.get_the_permalink().'"><img src="'.esc_url($rel_image_link[0]).'" class="img-responsive" alt="'.esc_attr__('logo', 'nokri').'"></a>
+									<a href="'.get_the_permalink().'"><img src="'.$featured_image.'" class="img-responsive" alt="'.esc_attr__('logo', 'nokri').'"></a>
                                  </div>
                                  <div class="n-featured-singel-meta">
                                     <h4><a href="'.get_the_permalink().'">'.get_the_title().'</a></h4>
@@ -186,7 +188,7 @@ if ( $recent_job_query->have_posts() )
                                  </div>
 								 '.$featured_html.'
                               </div>
-                              <div class="n-featured-single-bottom">
+                              <div class="n-featured-single-bottom 1">
                                  <ul class="">
                                     <li> <i class="fa fa-clock-o"></i>'.nokri_time_ago().'</li>
                                     <li>

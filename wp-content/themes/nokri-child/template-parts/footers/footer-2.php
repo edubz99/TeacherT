@@ -56,9 +56,13 @@ if((isset($nokri['footer_full'])) && $nokri['footer_full'] == 1)
                <?php echo $app_section_col; ?>
                   <div class="n-footer-block">
                      <?php echo ($job_location_text); ?>
-                     <ul class="n-page-links multiple">
-                        <?php echo nokri_footer_job_locations_links_blend(); ?>
-                     </ul>
+                    
+                     <?php
+                        wp_nav_menu( array(
+                           'theme_location' => 'menu-2',
+                           'container_class' => 'primary-footer-menu' ) );
+                     ?>
+                    
                   </div>
                </div>
                <?php if ($is_show_app_section) { ?>

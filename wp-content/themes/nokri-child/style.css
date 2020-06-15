@@ -354,3 +354,46 @@ body.single-courses .tutor-container {
 .page-tefl-courses .blog-detail-page figure:first-of-type:before {
   display: none;
 }
+
+.view-profile {
+  text-align: center;
+  padding: 20px;
+  display: block;
+  color: #fff;
+  font-weight: 500;
+  background-color: #372fde;
+}
+.view-profile:hover {
+  color: #fff;
+}
+#menu-footer-2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+#menu-footer-2 li {
+  margin-bottom: 10px;
+  padding: 0;
+  list-style: none;
+  margin-right: 22px;
+}
+#menu-footer-2 li a {
+  color: white;
+}
+#menu-footer-2 li a:hover {
+  color: #372fde;
+}
+
+.n-social-bar a:hover {
+  background-color: #372fde;
+}
+
+@media screen and (max-width: 768px) {
+  #menu-footer-2 {
+    flex-direction: column;
+  }
+}
+
+.n-search-page .col-lg-4 {
+  display: none;
+}
